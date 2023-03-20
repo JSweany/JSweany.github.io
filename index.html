@@ -12,7 +12,6 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -32,14 +31,18 @@
   <!-- Add your site or application content here -->
   <header>
     <div>
-      <!--To do:-->
-      <!--No navigation for this simple site--will add later when site benefits from more pages-->
-      <!--<nav></nav>-->
+      <nav>
+        <div id="nav_home" class="nav_link"><a href="#" class="current">Home</a></div>
+        <div class="nav_link"><a href="samples.html" class="not_current">Sample Work</a></div>
+      </nav>
+      
+
+      <!--Logo and Headline-->
       <div id="logo_div">
        <img id="logo" src="images/js_logo.svg" alt="Julie Sweany's logo"/>
       </div>
-      <div id="header_text">
-        <h1>Design &amp; <br>Development</h1>
+      <div class="header_text">
+        <h1 class="home_header_text">Design &amp; <br>Development</h1>
       </div>
     </div>
 
@@ -77,8 +80,10 @@
           <li><span class="emphasis">JavaScript</span> &ensp;Intermediate level of skill</li>
           <li><span class="emphasis">C#, PHP & Java</span> &ensp;Solid fundamental skills</li>
           <li><span class="emphasis">SQL</span> &ensp;Experienced using MySQL Workbench and phpMyAdmin to work with relational databases</li>
-          <li><span class="emphasis">Methodologies/Design Patterns</span> &ensp;Solid understanding of object-oriented programming and model view controller</li>
-          <li><span class="emphasis">Software/Services</span> &ensp;Experienced using Adobe Creative Cloud, GitHub, Microsoft Office, Figma, and project management software</li>
+          <li><span class="emphasis">Methodologies/Design Patterns</span> &ensp;Solid understanding of object-oriented programming and 
+            model view controller (particularly within the ASP.NET MVC framework)</li>
+          <li><span class="emphasis">Software/Services</span> &ensp;Proficient using Adobe Creative Cloud, Microsoft Office, 
+            Figma, and project management software; comfortable working with repositories on GitHub; experienced creating and maintaining WordPress websites</li>
         </ul>
         <!--Unordered list ends-->
       </p>
@@ -87,8 +92,56 @@
     </section>
     <!--Development section ends-->
 
+<!--2nd column for larger sizes starts-->
+  <div id="second_column">
+    <!--Samples section starts-->
+    <section id="sample_section">
+      <h2><a href="samples.html" class="h2_link">Recent Work</a></h2>
+    <!--Sample 1-->
 
+      <div id="sample_grid">
+        <div class="sample_card">
+          <figure id="acorn_sample">
+            <a href="samples.html#acorn_text">
+            <img class="sample_img" src="images/hp_acorn.jpg" alt="Picture of sample e-commerce website"/>
+            <figcaption>E-commerce Website</figcaption>
+          </a> 
+        </figure>
+        </div>
+    <!--Sample 2-->
 
+       <div class="sample_card">
+          <figure id="email_sample">
+            <a href="samples.html#html_emails_section">
+            <img class="sample_img" src="images/hp_emails.jpg" alt="Picture showing samples of HTML emails"/>
+            <figcaption>HTML Emails</figcaption>
+          </a> 
+          </figure>
+        </div>
+    <!--Sample 3-->
+
+          <div class="sample_card">
+          <figure id="events_sample">
+            <a href="samples.html#event_materials_section">
+            <img class="sample_img" src="images/hp_events.jpg" alt="Picture showing sample event materials"/>
+            <figcaption>Event Materials</figcaption>
+          </a> 
+          </figure>
+        </div>
+    <!--Sample 4-->
+
+            <div class="sample_card">
+          <figure id="logos_sample">
+            <a href="samples.html#logo_design_section">
+            <img class="sample_img" src="images/hp_logos.jpg" alt="Picture showing sample logo designs"/>
+            <figcaption>Logo Design</figcaption>
+          </a> 
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!--Samples section ends-->    
+    
     <!--Design section starts-->
     <section id="design_section">
       <h2>Graphic Design</h2>
@@ -99,14 +152,12 @@
       <div id="design_img_div">
         <img class="category_img" src="images/design1200.jpg" alt="Picture showing graphic design samples"/>
        </div>
-      
-      
-      
     </section>
     <!--Design section ends-->
-
+  </div>
     <!--Closing div tag for container div-->
   </div>
+
      <img src="images/home_bottom.png" id="bottom_image">
 
   </main>
